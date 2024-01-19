@@ -28,6 +28,7 @@ payload:
   - DOMAIN-SUFFIX,msunlimitedcloudsummit.com
   - DOMAIN-SUFFIX,renovacionoffice.com
   - DOMAIN-SUFFIX,sprinklesapp.com
+#copilot
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,gateway.bingviz.microsoft.net
   - DOMAIN,odc.officeapps.live.com
