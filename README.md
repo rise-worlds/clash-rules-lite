@@ -96,18 +96,18 @@ proxies:
     <b>- { name: '2-香港', type: *, server: **, port: *, cipher: **, password: **, udp: true }</b>
     <b>- ...</b>
 proxy-groups:
-    <b>- { name: '🔰 节点选择', type: select, proxies: ['1-香港', '2-香港'] }</b>
-    <b>- { name: '🎯 全球直连', type: select, proxies: ['DIRECT'] }</b>
-    <b>- { name: '🛑 全球拦截', type: select, proxies: ['REJECT'] }</b>
-    <b>- { name: 'Ⓜ️ 微软服务', type: select, proxies: ['🎯 全球直连', ] }</b>
-    <b>- { name: '🐟 漏网之鱼', type: select, proxies: ['🔰 节点选择'] }</b>
+    <b>- { name: '🔰节点选择', type: select, proxies: ['1-香港', '2-香港'] }</b>
+    <b>- { name: '🎯全球直连', type: select, proxies: ['DIRECT'] }</b>
+    <b>- { name: '🛑全球拦截', type: select, proxies: ['REJECT'] }</b>
+    <b>- { name: 'Ⓜ️微软服务', type: select, proxies: ['🎯全球直连', ] }</b>
+    <b>- { name: '🐟漏网之鱼', type: select, proxies: ['🔰节点选择'] }</b>
     <b>- ...</b>
 rules:
-  - RULE-SET,Backlist,🛑 全球拦截
-  - RULE-SET,Proxy,🔰 节点选择
-  - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+  - RULE-SET,Backlist,🛑全球拦截
+  - RULE-SET,Proxy,🔰节点选择
+  - RULE-SET,Microsoft,Ⓜ️微软服务
+  - GEOIP,CN,🎯全球直连
+  - MATCH,🐟漏网之鱼
 rule-providers:
   Proxy:
     type: http
